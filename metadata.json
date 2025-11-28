@@ -1,0 +1,7 @@
+{
+  "name": "GeoTrek AI",
+  "description": "A real-time movement tracking application that calculates journey distance, visualizes your route, and provides AI-powered trip summaries.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
