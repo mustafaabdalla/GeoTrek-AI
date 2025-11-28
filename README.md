@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GeoTrek AI
 
-# Run and deploy your AI Studio app
+GeoTrek AI is a real-time movement tracking application built with React, TypeScript, and Google Gemini API. It tracks your journey statistics (distance, speed, duration), visualizes your route using D3.js, and provides an AI-generated summary of your activity upon completion.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1NpAwxVDQ9SBu0GkhR0CjY6svLtHdVZGa
+- **Real-time Tracking**: Uses the Geolocation API to track movement with high accuracy.
+- **Live Stats**: Displays total distance (km), duration, current speed, and max speed.
+- **Route Visualization**: Draws your path in real-time using D3.js.
+- **AI Summaries**: Generates a motivational summary and health fact about your workout using Google's Gemini Flash model.
+- **Responsive Design**: Built with Tailwind CSS for a seamless mobile and desktop experience.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v18 or higher)
+- npm or yarn
+- A Google Gemini API Key
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/geotrek-ai.git
+    cd geotrek-ai
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Configure Environment Variables:
+    Create a `.env` file in the root directory and add your API key:
+    ```env
+    API_KEY=your_google_gemini_api_key_here
+    ```
+
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Technologies Used
+
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **Visualization**: D3.js
+- **AI**: @google/genai SDK (Gemini 2.5 Flash)
+- **Build Tool**: Vite
+
+## License
+
+MIT
